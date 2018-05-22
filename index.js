@@ -8,7 +8,7 @@ app.get('/', (request, response) => {
     response.send('Hello from Express!')
 });
 
-app.post('/webhooks', (request, response) => {
+app.post('/payload', (request, response) => {
    
     console.log(request.body);
     response.send('Hello from Express!')
