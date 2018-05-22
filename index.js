@@ -1,12 +1,10 @@
 const express = require( "express");
+const bodyParser = require('body-parser');
 
 const app = express();
 const port = 3000;
 
-app.get('/', (request, response) => {
-    console.log(request.body);
-    response.send('Hello from Express!')
-});
+app.use(bodyParser.json());
 
 app.post('/payload', (request, response) => {
    
