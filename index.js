@@ -7,7 +7,6 @@ const port = 3000;
 app.use(bodyParser.json());
 
 app.post('/payload', (request, response) => {
-   
     console.log(request.body);
     response.send('Hello from Express!')
 });
